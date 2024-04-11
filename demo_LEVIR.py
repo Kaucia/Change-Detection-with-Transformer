@@ -1,5 +1,5 @@
-import subprocess
-subprocess.run(["pip", "install", "torch"])
+# import subprocess
+# subprocess.run(["pip", "install", "torch"])
 
 
 

@@ -28,7 +28,7 @@ class CDEvaluator():
     def load_checkpoint(self, checkpoint_name='best_ckpt.pt'):
         # import os
         # print(os.path.join(self.checkpoint_dir, checkpoint_name), os.system('cd'))
-        self.checkpoint_dir = "checkpoints\CF\ChangeF"
+        self.checkpoint_dir = r"checkpoints/CF/ChangeF"
         print(f"{self.checkpoint_dir}, file name: {checkpoint_name}")
 
         if os.path.exists(os.path.join(self.checkpoint_dir, checkpoint_name)):

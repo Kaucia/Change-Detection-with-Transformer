@@ -63,9 +63,9 @@ def main():
     st.title("Image Viewer and Model Runner")
 
     # Define the paths to the folders containing your images
-    folder1_path = 'C:/Users/Kaustubha/OneDrive/Desktop/ChangeFormer/samples_LEVIR/A'
-    folder2_path = 'C:/Users/Kaustubha/OneDrive/Desktop/ChangeFormer/samples_LEVIR/B'
-    folder3_path = 'C:/Users/Kaustubha/OneDrive/Desktop/ChangeFormer/samples_LEVIR/label'
+    folder2_path = './samples_LEVIR/B'
+    folder1_path = './samples_LEVIR/A'
+    folder3_path = './samples_LEVIR/label'
 
     # Initialize variables to store images and model status
     if "image_index" not in st.session_state:
@@ -121,7 +121,7 @@ def main():
         try:
             if st.session_state.after_image and st.session_state.difference_image:
                 # Specify the output folder
-                output_folder = "C:/Users/Kaustubha/OneDrive/Desktop/ChangeFormer/UI"
+                output_folder = "./UI"
 
                 # Perform image overlay
                 overlayed_image = overlay_images(st.session_state.after_image, st.session_state.difference_image, transparency_slider)
